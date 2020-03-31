@@ -12,18 +12,17 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 0 0 240 184)
+	(rect 0 0 240 208)
 	(text "pll2" (rect 110 0 133 16)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
 	(port
 		(pt 0 64)
 		(input)
@@ -49,8 +48,20 @@ agreement for further details.
 		(text "c2" (rect 0 0 14 14)(font "Arial" (font_size 8)))
 		(text "c2" (rect 224 82 234 95)(font "Arial" (font_size 8)))
 	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "c3" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c3" (rect 224 98 234 111)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "c4" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c4" (rect 224 114 234 127)(font "Arial" (font_size 8)))
+	)
 	(drawing
-		(text "Cyclone IV E" (rect 164 168 383 347)(font "Arial" ))
+		(text "Cyclone IV E" (rect 164 192 383 395)(font "Arial" ))
 		(text "inclk0 frequency: 50.000 MHz" (rect 50 59 223 129)(font "Arial" ))
 		(text "Operation Mode: Normal" (rect 50 72 199 155)(font "Arial" ))
 		(text "Clk " (rect 51 93 116 197)(font "Arial" ))
@@ -69,26 +80,38 @@ agreement for further details.
 		(text "227/99" (rect 72 135 170 281)(font "Arial" ))
 		(text "0.00" (rect 110 135 236 281)(font "Arial" ))
 		(text "50.00" (rect 142 135 305 281)(font "Arial" ))
+		(text "c3" (rect 54 149 116 309)(font "Arial" ))
+		(text "14/25" (rect 75 149 171 309)(font "Arial" ))
+		(text "0.00" (rect 110 149 236 309)(font "Arial" ))
+		(text "50.00" (rect 142 149 305 309)(font "Arial" ))
+		(text "c4" (rect 54 163 117 337)(font "Arial" ))
+		(text "14/25" (rect 75 163 171 337)(font "Arial" ))
+		(text "0.00" (rect 110 163 236 337)(font "Arial" ))
+		(text "50.00" (rect 142 163 305 337)(font "Arial" ))
 		(line (pt 0 0)(pt 241 0))
-		(line (pt 241 0)(pt 241 185))
-		(line (pt 0 185)(pt 241 185))
-		(line (pt 0 0)(pt 0 185))
+		(line (pt 241 0)(pt 241 209))
+		(line (pt 0 209)(pt 241 209))
+		(line (pt 0 0)(pt 0 209))
 		(line (pt 48 91)(pt 170 91))
 		(line (pt 48 104)(pt 170 104))
 		(line (pt 48 118)(pt 170 118))
 		(line (pt 48 132)(pt 170 132))
 		(line (pt 48 146)(pt 170 146))
-		(line (pt 48 91)(pt 48 146))
-		(line (pt 69 91)(pt 69 146)(line_width 3))
-		(line (pt 101 91)(pt 101 146)(line_width 3))
-		(line (pt 135 91)(pt 135 146)(line_width 3))
-		(line (pt 169 91)(pt 169 146))
+		(line (pt 48 160)(pt 170 160))
+		(line (pt 48 174)(pt 170 174))
+		(line (pt 48 91)(pt 48 174))
+		(line (pt 69 91)(pt 69 174)(line_width 3))
+		(line (pt 101 91)(pt 101 174)(line_width 3))
+		(line (pt 135 91)(pt 135 174)(line_width 3))
+		(line (pt 169 91)(pt 169 174))
 		(line (pt 40 48)(pt 207 48))
-		(line (pt 207 48)(pt 207 167))
-		(line (pt 40 167)(pt 207 167))
-		(line (pt 40 48)(pt 40 167))
+		(line (pt 207 48)(pt 207 191))
+		(line (pt 40 191)(pt 207 191))
+		(line (pt 40 48)(pt 40 191))
 		(line (pt 239 64)(pt 207 64))
 		(line (pt 239 80)(pt 207 80))
 		(line (pt 239 96)(pt 207 96))
+		(line (pt 239 112)(pt 207 112))
+		(line (pt 239 128)(pt 207 128))
 	)
 )
