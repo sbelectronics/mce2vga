@@ -5422,8 +5422,8 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 672 32 912 184)
-	(text "pll1" (rect 110 0 133 16)(font "Arial" (font_size 10)))
+	(rect 672 32 928 184)
+	(text "pll1" (rect 118 0 141 16)(font "Arial" (font_size 10)))
 	(text "pll1" (rect 8 136 24 148)(font "Arial" ))
 	(port
 		(pt 0 64)
@@ -5433,40 +5433,40 @@ refer to the applicable agreement for further details.
 		(line (pt 0 64)(pt 40 64))
 	)
 	(port
-		(pt 240 64)
+		(pt 256 64)
 		(output)
 		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c0" (rect 224 50 238 64)(font "Arial" (font_size 8)))
+		(text "c0" (rect 240 50 254 64)(font "Arial" (font_size 8)))
 	)
 	(drawing
-		(text "Cyclone IV E" (rect 164 136 230 148)(font "Arial" ))
+		(text "Cyclone IV E" (rect 180 136 246 148)(font "Arial" ))
 		(text "inclk0 frequency: 50.000 MHz" (rect 50 59 197 71)(font "Arial" ))
 		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
 		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
-		(text "Ratio" (rect 77 93 102 105)(font "Arial" ))
-		(text "Ph (dg)" (rect 109 93 144 105)(font "Arial" ))
-		(text "DC (%)" (rect 143 93 179 105)(font "Arial" ))
+		(text "Ratio" (rect 82 93 107 105)(font "Arial" ))
+		(text "Ph (dg)" (rect 119 93 154 105)(font "Arial" ))
+		(text "DC (%)" (rect 153 93 189 105)(font "Arial" ))
 		(text "c0" (rect 54 107 65 119)(font "Arial" ))
-		(text "514/125" (rect 72 107 110 119)(font "Arial" ))
-		(text "0.00" (rect 115 107 136 119)(font "Arial" ))
-		(text "50.00" (rect 147 107 174 119)(font "Arial" ))
-		(line (pt 0 0)(pt 241 0))
-		(line (pt 241 0)(pt 241 153))
-		(line (pt 0 153)(pt 241 153))
+		(text "3333/1250" (rect 72 107 122 119)(font "Arial" ))
+		(text "0.00" (rect 125 107 146 119)(font "Arial" ))
+		(text "50.00" (rect 157 107 184 119)(font "Arial" ))
+		(line (pt 0 0)(pt 257 0))
+		(line (pt 257 0)(pt 257 153))
+		(line (pt 0 153)(pt 257 153))
 		(line (pt 0 0)(pt 0 153))
-		(line (pt 48 91)(pt 175 91))
-		(line (pt 48 104)(pt 175 104))
-		(line (pt 48 118)(pt 175 118))
+		(line (pt 48 91)(pt 185 91))
+		(line (pt 48 104)(pt 185 104))
+		(line (pt 48 118)(pt 185 118))
 		(line (pt 48 91)(pt 48 118))
 		(line (pt 69 91)(pt 69 118)(line_width 3))
-		(line (pt 106 91)(pt 106 118)(line_width 3))
-		(line (pt 140 91)(pt 140 118)(line_width 3))
-		(line (pt 174 91)(pt 174 118))
-		(line (pt 40 48)(pt 207 48))
-		(line (pt 207 48)(pt 207 135))
-		(line (pt 40 135)(pt 207 135))
+		(line (pt 116 91)(pt 116 118)(line_width 3))
+		(line (pt 150 91)(pt 150 118)(line_width 3))
+		(line (pt 184 91)(pt 184 118))
+		(line (pt 40 48)(pt 223 48))
+		(line (pt 223 48)(pt 223 135))
+		(line (pt 40 135)(pt 223 135))
 		(line (pt 40 48)(pt 40 135))
-		(line (pt 239 64)(pt 207 64))
+		(line (pt 255 64)(pt 223 64))
 	)
 )
 (symbol
@@ -5538,7 +5538,7 @@ refer to the applicable agreement for further details.
 	)
 	(parameter
 		"vsync_level"
-		"'0'"
+		"'1'"
 		""
 		(type "PARAMETER_ENUM")	)
 	(parameter
@@ -5548,12 +5548,12 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_ENUM")	)
 	(parameter
 		"hsync_ticks"
-		"250"
+		"216"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"vsync_ticks"
-		"3200"
+		"6400"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -5635,7 +5635,7 @@ refer to the applicable agreement for further details.
 	)
 	(parameter
 		"vsync_level"
-		"'0'"
+		"'1'"
 		""
 		(type "PARAMETER_ENUM")	)
 	(parameter
@@ -5645,12 +5645,12 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_ENUM")	)
 	(parameter
 		"hsync_ticks"
-		"250"
+		"152"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"vsync_ticks"
-		"3200"
+		"6400"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -8662,8 +8662,8 @@ refer to the applicable agreement for further details.
 	(pt 1072 360)
 )
 (connector
-	(text "EGA_CLK" (rect 930 80 976 97)(font "Intel Clear" ))
-	(pt 912 96)
+	(text "EGA_CLK" (rect 938 80 984 97)(font "Intel Clear" ))
+	(pt 928 96)
 	(pt 992 96)
 )
 (text "PLL" (rect 488 16 509 30)(font "Arial" (font_size 8)))
