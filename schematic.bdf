@@ -5422,101 +5422,52 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 672 1224 864 1368)
-	(text "sync_level" (rect 5 0 59 12)(font "Arial" ))
-	(text "hgc_sync_level" (rect 8 128 85 140)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "hsync" (rect 0 0 30 12)(font "Arial" ))
-		(text "hsync" (rect 21 43 51 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
+	(rect 672 32 912 184)
+	(text "pll1" (rect 110 0 133 16)(font "Arial" (font_size 10)))
+	(text "pll1" (rect 8 136 24 148)(font "Arial" ))
 	(port
 		(pt 0 64)
 		(input)
-		(text "vsync" (rect 0 0 31 12)(font "Arial" ))
-		(text "vsync" (rect 21 59 52 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 50 35 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 40 64))
 	)
 	(port
-		(pt 0 80)
-		(input)
-		(text "enable" (rect 0 0 31 12)(font "Arial" ))
-		(text "enable" (rect 21 75 52 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "adjust[2..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "adjust[2..0]" (rect 21 91 76 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 192 32)
+		(pt 240 64)
 		(output)
-		(text "vblank" (rect 0 0 33 12)(font "Arial" ))
-		(text "vblank" (rect 144 27 177 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 224 50 238 64)(font "Arial" (font_size 8)))
 	)
-	(port
-		(pt 192 48)
-		(output)
-		(text "hblank" (rect 0 0 31 12)(font "Arial" ))
-		(text "hblank" (rect 145 43 176 55)(font "Arial" ))
-		(line (pt 192 48)(pt 176 48))
-	)
-	(port
-		(pt 192 64)
-		(output)
-		(text "video_enable" (rect 0 0 64 12)(font "Arial" ))
-		(text "video_enable" (rect 117 59 181 71)(font "Arial" ))
-		(line (pt 192 64)(pt 176 64))
-	)
-	(port
-		(pt 192 80)
-		(output)
-		(text "no_video" (rect 0 0 44 12)(font "Arial" ))
-		(text "no_video" (rect 134 75 178 87)(font "Arial" ))
-		(line (pt 192 80)(pt 176 80))
-	)
-	(parameter
-		"vsync_level"
-		"'0'"
-		""
-		(type "PARAMETER_ENUM")	)
-	(parameter
-		"hsync_level"
-		"'1'"
-		""
-		(type "PARAMETER_ENUM")	)
-	(parameter
-		"hsync_ticks"
-		"61"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"vsync_ticks"
-		"3200"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"noise_filter"
-		"'1'"
-		""
-		(type "PARAMETER_ENUM")	)
 	(drawing
-		(rectangle (rect 16 16 176 128))
+		(text "Cyclone IV E" (rect 164 136 230 148)(font "Arial" ))
+		(text "inclk0 frequency: 50.000 MHz" (rect 50 59 197 71)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
+		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
+		(text "Ratio" (rect 77 93 102 105)(font "Arial" ))
+		(text "Ph (dg)" (rect 109 93 144 105)(font "Arial" ))
+		(text "DC (%)" (rect 143 93 179 105)(font "Arial" ))
+		(text "c0" (rect 54 107 65 119)(font "Arial" ))
+		(text "514/125" (rect 72 107 110 119)(font "Arial" ))
+		(text "0.00" (rect 115 107 136 119)(font "Arial" ))
+		(text "50.00" (rect 147 107 174 119)(font "Arial" ))
+		(line (pt 0 0)(pt 241 0))
+		(line (pt 241 0)(pt 241 153))
+		(line (pt 0 153)(pt 241 153))
+		(line (pt 0 0)(pt 0 153))
+		(line (pt 48 91)(pt 175 91))
+		(line (pt 48 104)(pt 175 104))
+		(line (pt 48 118)(pt 175 118))
+		(line (pt 48 91)(pt 48 118))
+		(line (pt 69 91)(pt 69 118)(line_width 3))
+		(line (pt 106 91)(pt 106 118)(line_width 3))
+		(line (pt 140 91)(pt 140 118)(line_width 3))
+		(line (pt 174 91)(pt 174 118))
+		(line (pt 40 48)(pt 207 48))
+		(line (pt 207 48)(pt 207 135))
+		(line (pt 40 135)(pt 207 135))
+		(line (pt 40 48)(pt 40 135))
+		(line (pt 239 64)(pt 207 64))
 	)
-	(annotation_block (parameter)(rect 864 1128 1040 1242))
 )
 (symbol
 	(rect 672 992 864 1136)
@@ -5597,7 +5548,7 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_ENUM")	)
 	(parameter
 		"hsync_ticks"
-		"61"
+		"250"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -5616,52 +5567,101 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 864 904 1040 1018))
 )
 (symbol
-	(rect 672 32 912 184)
-	(text "pll1" (rect 110 0 133 16)(font "Arial" (font_size 10)))
-	(text "pll1" (rect 8 136 24 148)(font "Arial" ))
+	(rect 672 1224 864 1368)
+	(text "sync_level" (rect 5 0 59 12)(font "Arial" ))
+	(text "hgc_sync_level" (rect 8 128 85 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "hsync" (rect 0 0 30 12)(font "Arial" ))
+		(text "hsync" (rect 21 43 51 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "inclk0" (rect 4 50 35 64)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 40 64))
+		(text "vsync" (rect 0 0 31 12)(font "Arial" ))
+		(text "vsync" (rect 21 59 52 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 240 64)
+		(pt 0 80)
+		(input)
+		(text "enable" (rect 0 0 31 12)(font "Arial" ))
+		(text "enable" (rect 21 75 52 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "adjust[2..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "adjust[2..0]" (rect 21 91 76 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 192 32)
 		(output)
-		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c0" (rect 224 50 238 64)(font "Arial" (font_size 8)))
+		(text "vblank" (rect 0 0 33 12)(font "Arial" ))
+		(text "vblank" (rect 144 27 177 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
 	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "hblank" (rect 0 0 31 12)(font "Arial" ))
+		(text "hblank" (rect 145 43 176 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "video_enable" (rect 0 0 64 12)(font "Arial" ))
+		(text "video_enable" (rect 117 59 181 71)(font "Arial" ))
+		(line (pt 192 64)(pt 176 64))
+	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "no_video" (rect 0 0 44 12)(font "Arial" ))
+		(text "no_video" (rect 134 75 178 87)(font "Arial" ))
+		(line (pt 192 80)(pt 176 80))
+	)
+	(parameter
+		"vsync_level"
+		"'0'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(parameter
+		"hsync_level"
+		"'1'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(parameter
+		"hsync_ticks"
+		"250"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"vsync_ticks"
+		"3200"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"noise_filter"
+		"'1'"
+		""
+		(type "PARAMETER_ENUM")	)
 	(drawing
-		(text "Cyclone IV E" (rect 164 136 230 148)(font "Arial" ))
-		(text "inclk0 frequency: 50.000 MHz" (rect 50 59 197 71)(font "Arial" ))
-		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
-		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
-		(text "Ratio" (rect 77 93 102 105)(font "Arial" ))
-		(text "Ph (dg)" (rect 109 93 144 105)(font "Arial" ))
-		(text "DC (%)" (rect 143 93 179 105)(font "Arial" ))
-		(text "c0" (rect 54 107 65 119)(font "Arial" ))
-		(text "514/125" (rect 72 107 110 119)(font "Arial" ))
-		(text "0.00" (rect 115 107 136 119)(font "Arial" ))
-		(text "50.00" (rect 147 107 174 119)(font "Arial" ))
-		(line (pt 0 0)(pt 241 0))
-		(line (pt 241 0)(pt 241 153))
-		(line (pt 0 153)(pt 241 153))
-		(line (pt 0 0)(pt 0 153))
-		(line (pt 48 91)(pt 175 91))
-		(line (pt 48 104)(pt 175 104))
-		(line (pt 48 118)(pt 175 118))
-		(line (pt 48 91)(pt 48 118))
-		(line (pt 69 91)(pt 69 118)(line_width 3))
-		(line (pt 106 91)(pt 106 118)(line_width 3))
-		(line (pt 140 91)(pt 140 118)(line_width 3))
-		(line (pt 174 91)(pt 174 118))
-		(line (pt 40 48)(pt 207 48))
-		(line (pt 207 48)(pt 207 135))
-		(line (pt 40 135)(pt 207 135))
-		(line (pt 40 48)(pt 40 135))
-		(line (pt 239 64)(pt 207 64))
+		(rectangle (rect 16 16 176 128))
 	)
+	(annotation_block (parameter)(rect 864 1128 1040 1242))
 )
 (connector
 	(text "MAIN_CLK" (rect 554 280 608 292)(font "Arial" ))
